@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="2nkZx3DFMK3_wF6BB5BG">
+    <mxGraphModel dx="2742" dy="2572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-22" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bGfzTOJFJvCM9ZHmMZeb-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-23" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=diamondThin;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-39" connectable="0" parent="bGfzTOJFJvCM9ZHmMZeb-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="employees" vertex="1">
+          <mxGeometry relative="1" x="-0.1797" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-40" connectable="0" parent="bGfzTOJFJvCM9ZHmMZeb-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.8104" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-25" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-1" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" />
+              <mxPoint x="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-26" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-27" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;PoliceEmployee&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- divisionName : String&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- yearsOfService : int&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- baseSalary : double&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- trainingScore : int&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- overtimeHours : int&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- disciplineRecordCount : int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ calculateMonthlyCompensation() : double &lt;br&gt;+ computePayRoll() : double &lt;br&gt;+ compareTo(PoliceEmployee) : int &lt;br&gt;+ getDivisionName() : String &lt;br&gt;+ getTrainingScore() : int &lt;br&gt;+ getOvertimeHours() : int&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="240" width="211" x="349.5" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-34" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bGfzTOJFJvCM9ZHmMZeb-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;PatrolOfficer&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="125" x="435" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Comparator&lt;/i&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="190" x="870" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-28" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-31" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=diamondThin;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-6" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;CompensationComparator&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ compare(a,b) : int&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="190" x="750" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-7" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;PoliceDepartmentManager&lt;/p&gt;&amp;nbsp;- divisions : Map&lt;div&gt; - employees : Set&lt;br&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addDivision() : void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addEmployee() : void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ assignSupervisor() : void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ findEmployeeById() : PoliceEmployee&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getSortedEmployees() : List&amp;nbsp;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="310" x="770" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-24" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-41" connectable="0" parent="bGfzTOJFJvCM9ZHmMZeb-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.7134" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-32" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-8" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Division&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- divisionName : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- employees : List&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt; - supervisor : PoliceEmployee&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addEmployee() : void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;+ setSupervisor() : void&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="490" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-9" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Person&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- employeeId : String&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;firstName : String&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- lastName : String&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- age : int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- hireDate : String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- address : String&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- phoneNumber : String&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ calculateMonthlyCompensation() : double &lt;br&gt;+ getRoleCategory() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ equals(Object) : boolean &lt;br/&gt;+ hashCode() : int &lt;br/&gt;+ toString() : String &amp;nbsp;&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="240" width="240" x="180" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-10" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&lt;b&gt;PayRoll&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ computePayRoll() : double&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="80" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-38" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bGfzTOJFJvCM9ZHmMZeb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-11" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;CivilianStaff&lt;/p&gt;- hourlyRate : double&amp;nbsp;&lt;div&gt;- monthlyHours : int&amp;nbsp;&lt;br&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ calculateMonthlyCompensation() : double &lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="260" x="560" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-36" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=classic;endFill=0;dashed=1;" target="bGfzTOJFJvCM9ZHmMZeb-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-12" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;SwornOfficer&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- rank : String&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- hazardAllowance : double&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- shift : String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ calculateMonthlyCompensation() : double &lt;br/&gt;+ assignShift(String) : void &lt;br/&gt;+ getShift() : String&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="240" x="300" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-13" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left;&quot;&gt;ShiftAssignable&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ assignShift(String) : void&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getShift() : String&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="190" x="80" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-33" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bGfzTOJFJvCM9ZHmMZeb-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Detective&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-35" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bGfzTOJFJvCM9ZHmMZeb-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-16" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Dispatcher&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="125" x="637" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-29" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-30" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=default;labelBackgroundColor=default;endArrow=diamondThin;endFill=0;" target="bGfzTOJFJvCM9ZHmMZeb-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-17" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;YearsOfServiceComparator&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ compare(a,b) : int&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="190" x="1000" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Comparable&lt;/i&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="190" x="637" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-19" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;InvalidSupervisorAssignmentException&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="890" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-20" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;DivisionNotFoundException&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="890" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-21" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;DuplicateEmployeeException&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="890" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bGfzTOJFJvCM9ZHmMZeb-37" edge="1" parent="1" source="bGfzTOJFJvCM9ZHmMZeb-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.429;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="bGfzTOJFJvCM9ZHmMZeb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
