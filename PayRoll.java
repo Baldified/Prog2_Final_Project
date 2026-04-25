@@ -1,0 +1,3 @@
+interface PayRoll {
+    double computePayRoll();
+}

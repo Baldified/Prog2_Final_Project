@@ -1,18 +1,4 @@
-public class Detective extends CivilianStaff {
-    
-    public Detective() {
-        
-    }
-
-    @Override
-    public int calculateMonthlyCompensation() {
-        int a = 0;
-        return a; 
-    }
-
-    @Override
-    public String getRoleCategory() {
-        String a = "";
-        return a;
-    }
+public class Detective extends SwornOfficer {
+    public Detective() { super(); }
+    public Detective(SwornOfficer other) { super(other); }
 }

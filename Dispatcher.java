@@ -1,10 +1,9 @@
-public class Dispatcher extends PatrolOfficer {
-    public Dispatcher() {
-        
-    }
+public class Dispatcher extends CivilianStaff {
+    public Dispatcher() { super(); }
+    public Dispatcher(CivilianStaff other) { super(other); }
 
     @Override
-    public int calculateMonthlyCompensation() {
+    public double calculateMonthlyCompensation() {
         int a = 0;
         return a; 
     }
