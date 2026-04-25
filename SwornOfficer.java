@@ -1,5 +1,8 @@
 public class SwornOfficer extends Person {
 
+    public SwornOfficer() {
+        
+    }
 
     @Override
     public int calculateMonthlyCompensation() {

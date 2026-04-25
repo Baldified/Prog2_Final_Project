@@ -1,5 +1,8 @@
 public class CivilianStaff extends Person {
-
+    
+    public CivilianStaff() {
+        
+    }
 
     @Override
     public int calculateMonthlyCompensation() {

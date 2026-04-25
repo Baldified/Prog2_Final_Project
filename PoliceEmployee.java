@@ -1,5 +1,8 @@
 public class PoliceEmployee extends Person {
 
+    public PoliceEmployee() {
+        
+    }
 
     @Override
     public int calculateMonthlyCompensation() {
