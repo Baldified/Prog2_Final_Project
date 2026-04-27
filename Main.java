@@ -33,8 +33,5 @@ public class Main {
         System.out.println(d.getEmployees());
         Division dcopy = d;
         System.out.println(d.equals(dcopy));
-        d.setSupervisor(po);
-        dcopy.setSupervisor(swo);
-        System.out.println(d.getSupervisor().equals(dcopy.getSupervisor()));
     }
 }
