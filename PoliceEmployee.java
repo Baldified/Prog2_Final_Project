@@ -96,8 +96,10 @@ public class PoliceEmployee extends Person implements PayRoll,Comparable<PoliceE
 
     @Override
     public int compareTo(PoliceEmployee o) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        return  this.employeeId.compareTo(o.employeeId) * 10 +
+                this.lastName.compareTo(o.lastName) * 8 +
+                this.firstName.compareTo(o.firstName) * 6 +
+                (this.age - o.age) * 4;
     }
 
     @Override
