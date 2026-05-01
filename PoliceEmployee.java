@@ -84,8 +84,7 @@ public class PoliceEmployee extends Person implements PayRoll,Comparable<PoliceE
 
     @Override
     public double calculateMonthlyCompensation() {
-        double a = 0;
-        return a; 
+        return (baseSalary * 8 * 30) + (overtimeHours * baseSalary * 2);
     }
 
     @Override

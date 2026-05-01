@@ -4,8 +4,7 @@ public class Dispatcher extends CivilianStaff {
 
     @Override
     public double calculateMonthlyCompensation() {
-        int a = 0;
-        return a; 
+        return (baseSalary * 8 * 30) + (overtimeHours * baseSalary * 2);
     }
 
     @Override

@@ -56,8 +56,7 @@ public class SwornOfficer extends PoliceEmployee implements ShiftAssignable{
 
     @Override
     public double calculateMonthlyCompensation() {
-        double a = 0;
-        return a; 
+        return (baseSalary * 8 * 30) + (overtimeHours * baseSalary * 2);
     }
 
     @Override
