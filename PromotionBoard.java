@@ -1,9 +1,14 @@
 public class PromotionBoard {
-    public PromotionBoard() {
-        super();
+    PromotionEvaluator pme;
+
+    public PromotionBoard(PromotionEvaluator pme) {
+        this.pme = pme;
     }
     
     public void approveSupervisorPromotion() {
-        //TO DO
+        if (pme.isEligibleForPromotion())
+            System.out.println("Promotion approved");
+        else
+            System.out.println("Promotion disapproved");
     }
 }
