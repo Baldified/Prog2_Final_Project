@@ -4,11 +4,30 @@ public class ShiftManagedOfficer extends SwornOfficer{
 
     public ShiftManagedOfficer() {
         super();
-        this.shiftRecord = new ShiftRecord();  //COMPOSITION
+    }
+
+    public ShiftManagedOfficer(String employeeId, String firstName, String lastName,
+                        int age, String hireDate, String address, String phoneNumber,
+                        String divisionName, int yearsOfService, double baseSalary,
+                        int trainingScore, int overtimeHours, int disciplineRecordCount,
+                        String rank, double hazardAllowance, String shift, int rankLevel,
+                        String shiftType, int monthlyShiftCount) {
+
+        super(employeeId, firstName, lastName, age, hireDate, address, phoneNumber,
+              divisionName, yearsOfService, baseSalary,
+              trainingScore, overtimeHours, disciplineRecordCount,
+              rank, hazardAllowance, shift);
+        
+        this.shiftRecord = new ShiftRecord(shiftType, monthlyShiftCount);  //COMPOSITION
+    }
+
+    public ShiftManagedOfficer(ShiftManagedOfficer other) {
+        super(other);
+        this.shiftRecord = other.shiftRecord;
     }
 
     @Override
     public double calculateMonthlyCompensation() {
-        return (baseSalary * 8 * 30) + (overtimeHours * baseSalary * 2);
+        return (this.baseSalary * 8 * 30) + (this.overtimeHours * this.baseSalary * 2);
     }
 }

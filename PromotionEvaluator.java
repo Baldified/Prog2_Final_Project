@@ -1,8 +1,15 @@
 public class PromotionEvaluator {
     LeadershipProfile lpf;
+    PromotionEvaluator pme;
+
+    public PromotionEvaluator() {}
 
     public PromotionEvaluator(LeadershipProfile lpf) {
         this.lpf = lpf;
+    }
+
+    public PromotionEvaluator(PromotionEvaluator other) {
+        this.lpf = other.lpf;
     }
 
     public boolean isEligibleForPromotion() {

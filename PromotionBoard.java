@@ -1,8 +1,14 @@
 public class PromotionBoard {
     PromotionEvaluator pme;
 
+    public PromotionBoard() {}
+
     public PromotionBoard(PromotionEvaluator pme) {
         this.pme = pme;
+    }
+
+    public PromotionBoard(PromotionBoard other) {
+        this.pme = other.pme;
     }
     
     public void approveSupervisorPromotion() {
