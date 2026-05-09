@@ -1,0 +1,12 @@
+DETECTIVE 100 Aob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+DISPATCHER 101 Bob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 4 32
+PATROLOFFICER 102 Cob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+SWORNOFFICER 103 Dob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+DETECTIVE 104 Eob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+DISPATCHER 105 Fob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 4 32
+PATROLOFFICER 106 Gob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+SWORNOFFICER 107 Hob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+DETECTIVE 108 Iob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+DISPATCHER 109 Job Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 4 32
+PATROLOFFICER 110 Kob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+SWORNOFFICER 111 Lob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday

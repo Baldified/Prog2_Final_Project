@@ -1,4 +1,11 @@
 public class Dispatcher extends CivilianStaff {
+    
+    public Dispatcher(String employeeId, String firstName, String lastName, int age, String hireDate, String address,
+            String phoneNumber, String divisionName, int yearsOfService, double baseSalary, int trainingScore,
+            int overtimeHours, int disciplineRecordCount, double hourlyRate, int monthlyHours) {
+        super(employeeId, firstName, lastName, age, hireDate, address, phoneNumber, divisionName, yearsOfService,
+                baseSalary, trainingScore, overtimeHours, disciplineRecordCount, hourlyRate, monthlyHours);
+    }
     public Dispatcher() { super(); }
     public Dispatcher(CivilianStaff other) { super(other); }
 
