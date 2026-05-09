@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.BorderLayout;
 public class PoliceDepartmentGUI {
     protected JFrame gui = new JFrame();
     protected PoliceDepartmentManager pdm = new PoliceDepartmentManager();
@@ -9,12 +10,12 @@ public class PoliceDepartmentGUI {
         gui.setSize(720,520);
         gui.setLocationRelativeTo(null);
 
-        createAddEmployee();
+        gui.add(createAddEmployee());
         
         gui.setVisible(true);
     }
 
-    private void createAddEmployee() {
+    private JPanel createAddEmployee() {
         JButton AddE = new JButton("Add Employee");
         JTextField input = new JTextField();
 
@@ -33,10 +34,12 @@ public class PoliceDepartmentGUI {
                 showInputError();
             }
         });
-
-        gui.add(AddE);
-        gui.add(input);
+        JPanel jp = new JPanel(new BorderLayout(10,10));
+        jp.add(AddE,BorderLayout.WEST);
+        jp.add(input,BorderLayout.CENTER);
+        return jp;
     }
+
 
     private void showInputError() {
         JOptionPane.showMessageDialog(gui,
