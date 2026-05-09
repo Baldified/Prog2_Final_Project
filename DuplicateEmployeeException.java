@@ -1,4 +1,4 @@
-public class DuplicateEmployeeException extends Exception{
+public class DuplicateEmployeeException extends RuntimeException{
 
     public DuplicateEmployeeException() {}
 
