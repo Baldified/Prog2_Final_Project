@@ -34,4 +34,17 @@ public class PoliceDepartmentManager {
         Collections.sort(list);
         return list;
     }
+    public Map<String, Division> getDivisions() {
+        return divisions;
+    }
+    public void setDivisions(Map<String, Division> divisions) {
+        this.divisions = divisions;
+    }
+    public Set<PoliceEmployee> getEmployees() {
+        return employees;
+    }
+    public void setEmployees(Set<PoliceEmployee> employees) {
+        this.employees = employees;
+    }
+    
 }

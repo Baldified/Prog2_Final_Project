@@ -1,10 +1,51 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class PoliceTextIO {
 
-    void exportEmployees(){}
+    void exportEmployees(PoliceDepartmentManager pdm) {
+        File exported = new File("exported.txt");
+        try (FileWriter fw = new FileWriter(exported, true)) {
+            for (PoliceEmployee pe : pdm.getEmployees()) {
+                fw.write(pe.getClass().toString().toUpperCase() + " " + 
+                            pe.getEmployeeId() + " " +
+                            pe.getFirstName() + " " +
+                            pe.getLastName() + " " +
+                            pe.getAge() + " " +
+                            pe.getHireDate() + " " +
+                            pe.getAddress() + " " +
+                            pe.getPhoneNumber() + " " +
+                            pe.getDivisionName() + " " +
+                            pe.getYearsOfService() + " " +
+                            pe.getBaseSalary() + " " +
+                            pe.getTrainingScore() + " " +
+                            pe.getOvertimeHours());
+                if (pe instanceof Detective) {
+                    Detective dec = (Detective) pe;
+                    fw.write(dec.getRank() + " " + dec.getHazardAllowance() + " " + dec.getShift());
+                } 
+                else if (pe instanceof Dispatcher) {
+                    Dispatcher dis = (Dispatcher) pe;
+                    fw.write(dis.getHourlyRate() + " " + dis.getMonthlyHours());
+                } 
+                else if (pe instanceof PatrolOfficer) {
+                    PatrolOfficer po = (PatrolOfficer) pe;
+                    fw.write(po.getRank() + " " + po.getHazardAllowance() + " " + po.getShift());
+                } 
+                else if (pe instanceof SwornOfficer) {
+                    SwornOfficer so = (SwornOfficer) pe;
+                    fw.write(so.getRank() + " " + so.getHazardAllowance() + " " + so.getShift());
+                }
+                fw.write('\n');
+            }
+        } 
+        catch (IOException e) {
+        System.out.println(String.format("%s: %s", e.getClass(), e.getMessage()));
+        }
+    }
     PoliceDepartmentManager importLines() {
         String imported = "export.txt";
         PoliceDepartmentManager pdm = new PoliceDepartmentManager();
@@ -29,9 +70,6 @@ public class PoliceTextIO {
                 int trainingScore = input.nextInt();
                 int overtimeHours = input.nextInt();
                 int disciplineRecordCount = input.nextInt();
-                PoliceEmployee policeEmployee = new PoliceEmployee(employeeId, firstName, lastName,age, hireDate, address,
-                                                                    phoneNumber, divisionName, yearsOfService, baseSalary, 
-                                                                    trainingScore, overtimeHours, disciplineRecordCount);
                 switch (fill) {
                     case "DETECTIVE":
                         String rank = input.next();
