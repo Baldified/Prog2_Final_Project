@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class Main {
     public static void main(String[] args) {
         // Division d = new Division();
@@ -33,7 +35,10 @@ public class Main {
         // System.out.println(d.getEmployees());
         // Division dcopy = d;
         // System.out.println(d.equals(dcopy));
-
-        PoliceDepartmentGUI gui = new PoliceDepartmentGUI();
+        PoliceTextIO ptIO = new PoliceTextIO();
+        PoliceDepartmentManager pdm = ptIO.importPDM();
+        System.out.println(pdm.getSortedEmployees());
+        ptIO.exportEmployees(pdm);
+        //PoliceDepartmentGUI gui = new PoliceDepartmentGUI();
     }
 }

@@ -9,8 +9,8 @@ public class PoliceTextIO {
     void exportEmployees(PoliceDepartmentManager pdm) {
         File exported = new File("exported.txt");
         try (FileWriter fw = new FileWriter(exported, true)) {
-            for (PoliceEmployee pe : pdm.getEmployees()) {
-                fw.write(pe.getClass().toString().toUpperCase() + " " + 
+            for (PoliceEmployee pe : pdm.getSortedEmployees()) {
+                fw.write(pe.getClass().toString().toUpperCase() + " " +
                             pe.getEmployeeId() + " " +
                             pe.getFirstName() + " " +
                             pe.getLastName() + " " +
@@ -22,31 +22,26 @@ public class PoliceTextIO {
                             pe.getYearsOfService() + " " +
                             pe.getBaseSalary() + " " +
                             pe.getTrainingScore() + " " +
-                            pe.getOvertimeHours());
-                if (pe instanceof Detective) {
-                    Detective dec = (Detective) pe;
-                    fw.write(dec.getRank() + " " + dec.getHazardAllowance() + " " + dec.getShift());
-                } 
-                else if (pe instanceof Dispatcher) {
-                    Dispatcher dis = (Dispatcher) pe;
-                    fw.write(dis.getHourlyRate() + " " + dis.getMonthlyHours());
-                } 
-                else if (pe instanceof PatrolOfficer) {
-                    PatrolOfficer po = (PatrolOfficer) pe;
-                    fw.write(po.getRank() + " " + po.getHazardAllowance() + " " + po.getShift());
-                } 
-                else if (pe instanceof SwornOfficer) {
-                    SwornOfficer so = (SwornOfficer) pe;
-                    fw.write(so.getRank() + " " + so.getHazardAllowance() + " " + so.getShift());
+                            pe.getOvertimeHours() + " ");
+                switch (pe) {
+                    case Detective dec ->
+                            fw.write(dec.getRank() + " " + dec.getHazardAllowance() + " " + dec.getShift());
+                    case Dispatcher dis -> fw.write(dis.getHourlyRate() + " " + dis.getMonthlyHours());
+                    case PatrolOfficer po ->
+                            fw.write(po.getRank() + " " + po.getHazardAllowance() + " " + po.getShift());
+                    case SwornOfficer so ->
+                            fw.write(so.getRank() + " " + so.getHazardAllowance() + " " + so.getShift());
+                    default -> {
+                    }
                 }
                 fw.write('\n');
             }
         } 
         catch (IOException e) {
-        System.out.println(String.format("%s: %s", e.getClass(), e.getMessage()));
+        System.out.printf("%s: %s%n", e.getClass(), e.getMessage());
         }
     }
-    PoliceDepartmentManager importLines() {
+    PoliceDepartmentManager importPDM() {
         String imported = "export.txt";
         PoliceDepartmentManager pdm = new PoliceDepartmentManager();
         Scanner input;
@@ -56,6 +51,7 @@ public class PoliceTextIO {
             return null;
         }
         while (input.hasNextLine()) {
+                String classwd = input.next();
                 String fill = input.next();
                 String employeeId = input.next();
                 String firstName = input.next();
@@ -108,8 +104,8 @@ public class PoliceTextIO {
                         break;
                     default:
                      break;
-            }
-            input.nextLine();
+                }
+                if (input.hasNextLine()) input.nextLine();
         }
         return pdm;
     }
