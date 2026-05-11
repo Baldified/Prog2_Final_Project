@@ -3,6 +3,7 @@ import java.awt.BorderLayout;
 public class PoliceDepartmentGUI {
     protected JFrame gui = new JFrame();
     protected PoliceDepartmentManager pdm = new PoliceDepartmentManager();
+    protected PoliceTextIO pTIO = new PoliceTextIO();
     
     public PoliceDepartmentGUI() {
         gui.setTitle("Police Department");
@@ -11,7 +12,8 @@ public class PoliceDepartmentGUI {
         gui.setLocationRelativeTo(null);
 
         gui.add(createAddEmployee());
-        
+        gui.add(importExportEmployees());
+
         gui.setVisible(true);
     }
 
@@ -25,7 +27,7 @@ public class PoliceDepartmentGUI {
         input.setLocation(250, 60);
 
         
-        AddE.addActionListener(e -> {
+        AddE.addActionListener(_ -> {
             try {
                 String id = input.getText().trim();
                 pdm.addEmployee(pdm.findEmployeeById(id));
@@ -37,6 +39,23 @@ public class PoliceDepartmentGUI {
         JPanel jp = new JPanel(new BorderLayout(10,10));
         jp.add(AddE,BorderLayout.WEST);
         jp.add(input,BorderLayout.CENTER);
+        return jp;
+    }
+
+    private JPanel importExportEmployees() {
+        JButton importEmployee = new JButton("Import");
+        JButton exportEmployee = new JButton("Export");
+
+        importEmployee.setSize(40,40);
+        exportEmployee.setSize(40,40);
+
+        importEmployee.addActionListener(_ -> pdm = pTIO.importPDM());
+        exportEmployee.addActionListener(_ -> pTIO.exportEmployees(pdm));
+
+        JPanel jp = new JPanel(new BorderLayout(10,10));
+        jp.add(importEmployee, BorderLayout.NORTH);
+        jp.add(exportEmployee,BorderLayout.SOUTH);
+
         return jp;
     }
 

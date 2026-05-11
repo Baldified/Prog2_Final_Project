@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,10 +34,7 @@ public class Main {
         // System.out.println(d.getEmployees());
         // Division dcopy = d;
         // System.out.println(d.equals(dcopy));
-        PoliceTextIO ptIO = new PoliceTextIO();
-        PoliceDepartmentManager pdm = ptIO.importPDM();
-        System.out.println(pdm.getSortedEmployees());
-        ptIO.exportEmployees(pdm);
-        //PoliceDepartmentGUI gui = new PoliceDepartmentGUI();
+
+        new PoliceDepartmentGUI();
     }
 }
