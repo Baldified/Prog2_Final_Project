@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class PoliceTextIO {
 
     void exportEmployees(PoliceDepartmentManager pdm) {
-        File exported = new File("exported.txt");
-        try (FileWriter fw = new FileWriter(exported, true)) {
+        File exported = new File("export.txt");
+        try (FileWriter fw = new FileWriter(exported, false)) {
             for (PoliceEmployee pe : pdm.getSortedEmployees()) {
                 fw.write(pe.getClass().toString().toUpperCase() + " " +
                             pe.getEmployeeId() + " " +
@@ -22,7 +22,8 @@ public class PoliceTextIO {
                             pe.getYearsOfService() + " " +
                             pe.getBaseSalary() + " " +
                             pe.getTrainingScore() + " " +
-                            pe.getOvertimeHours() + " ");
+                            pe.getOvertimeHours() + " " +
+                            pe.getDisciplineRecordCount() + " ");
                 switch (pe) {
                     case Detective dec ->
                             fw.write(dec.getRank() + " " + dec.getHazardAllowance() + " " + dec.getShift());
@@ -34,7 +35,7 @@ public class PoliceTextIO {
                     default -> {
                     }
                 }
-                fw.write('\n');
+                    fw.write('\n');
             }
         } 
         catch (IOException e) {
