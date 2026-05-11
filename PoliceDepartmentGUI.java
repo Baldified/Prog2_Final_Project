@@ -1,20 +1,22 @@
 import javax.swing.*;
 import java.awt.BorderLayout;
-public class PoliceDepartmentGUI {
-    protected JFrame gui = new JFrame();
+public class PoliceDepartmentGUI extends JFrame {
     protected PoliceDepartmentManager pdm = new PoliceDepartmentManager();
     protected PoliceTextIO pTIO = new PoliceTextIO();
     
     public PoliceDepartmentGUI() {
-        gui.setTitle("Police Department");
-        gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        gui.setSize(720,520);
-        gui.setLocationRelativeTo(null);
 
-        gui.add(createAddEmployee());
-        gui.add(importExportEmployees());
+        JTabbedPane jtp = new JTabbedPane();
+        jtp.addTab("Add employee",createAddEmployee());
+        jtp.addTab("Import / export employee",importExportEmployees());
+        setTitle("Police Department");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(720,520);
+        setLocationRelativeTo(null);
+        
+        add(jtp);
 
-        gui.setVisible(true);
+        setVisible(true);
     }
 
     private JPanel createAddEmployee() {
@@ -37,6 +39,7 @@ public class PoliceDepartmentGUI {
             }
         });
         JPanel jp = new JPanel(new BorderLayout(10,10));
+        jp.setBorder(BorderFactory.createEmptyBorder(150,25,150,25));
         jp.add(AddE,BorderLayout.WEST);
         jp.add(input,BorderLayout.CENTER);
         return jp;
@@ -53,15 +56,16 @@ public class PoliceDepartmentGUI {
         exportEmployee.addActionListener(_ -> pTIO.exportEmployees(pdm));
 
         JPanel jp = new JPanel(new BorderLayout(10,10));
-        jp.add(importEmployee, BorderLayout.NORTH);
-        jp.add(exportEmployee,BorderLayout.SOUTH);
+        jp.setBorder(BorderFactory.createEmptyBorder(150,225,150,225));
+        jp.add(importEmployee, BorderLayout.WEST);
+        jp.add(exportEmployee,BorderLayout.EAST);
 
         return jp;
     }
 
 
     private void showInputError() {
-        JOptionPane.showMessageDialog(gui,
+        JOptionPane.showMessageDialog(this,
                 "Duplicate employees.",
                 "Input Error",
                 JOptionPane.ERROR_MESSAGE);
