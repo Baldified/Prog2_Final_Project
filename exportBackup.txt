@@ -10,3 +10,10 @@ CLASS DETECTIVE 108 Iob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6
 CLASS DISPATCHER 109 Job Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 4 32
 CLASS PATROLOFFICER 110 Kob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
 CLASS SWORNOFFICER 111 Lob Cob 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30 6 3 31 leuitenant 4 Monday
+CLASS ShiftManagedOfficer 112 Bruce1 one 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 h1 30 
+CLASS ShiftManagedOfficer 113 Bruce2 two 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 h2 30
+CLASS ShiftManagedOfficer 114 Bruce3 three 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 h3 30
+CLASS ShiftManagedOfficer 115 Bruce4 four 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 h4 30
+CLASS ShiftManagedOfficer 116 Bruce5 five 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 h4 30
+CLASS ShiftManagedOfficer 117 Bruce6 six 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 null 30
+CLASS ShiftManagedOfficer 118 Bruce7 seven 47 1-1-2020 123_Saint-Sahur 514-673-4324 Echo 6 30.0 6 3 31 leuitenant 4.0 Monday 50 null 0
