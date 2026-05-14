@@ -1,4 +1,8 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Main {
     public static void main(String[] args) {
         // Division d = new Division();
@@ -77,16 +81,26 @@ public class Main {
                         "high", 123, "now", 123,
                         "aco", 132);
 
-        ShiftManager a = new ShiftManager();
+        // ShiftManagedOfficer smo5 = new ShiftManagedOfficer("a1", "Bruce", "Lam",
+        //                 18, "2007-12-01", "1213123", "12312312",
+        //                 "a3", 12, 1235,
+        //                 1, 1, 1,
+        //                 "high", 123, "now", 123,
+        //                 null, 231231);
 
-        a.addShiftManagedOfficer(smo);
-        a.addShiftManagedOfficer(smo1);
-        a.addShiftManagedOfficer(smo2);
-        a.addShiftManagedOfficer(smo3);
-        a.addShiftManagedOfficer(smo4);
-
-
-        System.out.println(a.hasShiftConflict());
-
+        List<ShiftManagedOfficer> a = new ArrayList<>();
+        a.add(smo);
+        a.add(smo1);
+        a.add(smo2);
+        a.add(smo3);
+        a.add(smo4);
+        // a.add(smo5);
+        ShiftManager b = new ShiftManager(a);
+        CoverageAnalyzer c = new CoverageAnalyzer(a);
+        EmergencyShiftPlanner d = new EmergencyShiftPlanner();
+        
+        System.out.println(b.hasShiftConflict());
+        System.out.println(c.hasShortage());
+        d.suggestEmergencyReassignment(c);
     }
 }

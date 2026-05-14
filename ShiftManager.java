@@ -2,22 +2,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShiftManager {
-    protected List<ShiftManagedOfficer> smo;
+    protected List<ShiftManagedOfficer> sMO;
 
     public ShiftManager() {
-        smo = new ArrayList<>();
+        sMO = new ArrayList<>();
+    }
+
+    public ShiftManager(List<ShiftManagedOfficer> a) {
+        sMO = a;
     }
 
     public void addShiftManagedOfficer(ShiftManagedOfficer a) {
-        smo.add(a);
+        sMO.add(a);
     }
 
     public boolean hasShiftConflict() {
-        if (smo.size() > 1) {
+        if (sMO.size() > 1) {
             int j = 0;
-            for (ShiftManagedOfficer a : smo) {
-                for (int k = 1 + j; k < smo.size(); k++)
-                    if ((a.getShiftRecord().getShiftType()).equalsIgnoreCase(smo.get(k).getShiftRecord().getShiftType()))
+            for (ShiftManagedOfficer a : sMO) {
+                for (int k = 1 + j; k < sMO.size(); k++)
+                    if ((a.getShiftRecord().getShiftType()).equalsIgnoreCase(sMO.get(k).getShiftRecord().getShiftType()))
                         return true;
                 j++;
             }

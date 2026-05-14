@@ -17,7 +17,9 @@ public class ShiftManagedOfficer extends SwornOfficer{
               divisionName, yearsOfService, baseSalary,
               trainingScore, overtimeHours, disciplineRecordCount,
               rank, hazardAllowance, shift);
-        
+              
+        if (shiftType == null)
+            monthlyShiftCount = 0;
         this.shiftRecord = new ShiftRecord(shiftType, monthlyShiftCount);  //COMPOSITION
     }
 
