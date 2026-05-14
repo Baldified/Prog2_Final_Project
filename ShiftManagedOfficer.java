@@ -26,8 +26,17 @@ public class ShiftManagedOfficer extends SwornOfficer{
         this.shiftRecord = other.shiftRecord;
     }
 
+    public ShiftRecord getShiftRecord() {
+        return shiftRecord;
+    }
+
+    public void setShiftRecord(ShiftRecord shiftRecord) {
+        this.shiftRecord = shiftRecord;
+    }
+
     @Override
     public double calculateMonthlyCompensation() {
         return (this.baseSalary * 8 * 30) + (this.overtimeHours * this.baseSalary * 2);
     }
+
 }

@@ -16,4 +16,20 @@ public class ShiftRecord extends ShiftManagedOfficer {
         this.shiftType = other.shiftType;
         this.monthlyShiftCount = other.monthlyShiftCount;
     }
+
+    public String getShiftType() {
+        return shiftType;
+    }
+
+    public void setShiftType(String shiftType) {
+        this.shiftType = shiftType;
+    }
+
+    public int getMonthlyShiftCount() {
+        return monthlyShiftCount;
+    }
+
+    public void setMonthlyShiftCount(int monthlyShiftCount) {
+        this.monthlyShiftCount = monthlyShiftCount;
+    }
 }   

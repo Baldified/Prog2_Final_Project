@@ -35,6 +35,58 @@ public class Main {
         // Division dcopy = d;
         // System.out.println(d.equals(dcopy));
 
-        new PoliceDepartmentGUI();
+        // new PoliceDepartmentGUI();
+
+
+
+
+        //TEST delete if needed
+
+        ShiftManagedOfficer smo = new ShiftManagedOfficer("a1", "Bruce", "Lam",
+                        18, "2007-12-01", "1213123", "12312312",
+                        "a3", 12, 1235,
+                        1, 1, 1,
+                        "high", 123, "now", 123,
+                        "aco", 132);
+
+        ShiftManagedOfficer smo1 = new ShiftManagedOfficer("a1", "Bruce", "Lam",
+                        18, "2007-12-01", "1213123", "12312312",
+                        "a3", 12, 1235,
+                        1, 1, 1,
+                        "high", 123, "now", 123,
+                        "acto", 132);
+
+        ShiftManagedOfficer smo2 = new ShiftManagedOfficer("a1", "Bruce", "Lam",
+                        18, "2007-12-01", "1213123", "12312312",
+                        "a3", 12, 1235,
+                        1, 1, 1,
+                        "high", 123, "now", 123,
+                        "acro", 132);
+
+        ShiftManagedOfficer smo3 = new ShiftManagedOfficer("a1", "Bruce", "Lam",
+                        18, "2007-12-01", "1213123", "12312312",
+                        "a3", 12, 1235,
+                        1, 1, 1,
+                        "high", 123, "now", 123,
+                        "acyo", 132);
+        
+        ShiftManagedOfficer smo4 = new ShiftManagedOfficer("a1", "Bruce", "Lam",
+                        18, "2007-12-01", "1213123", "12312312",
+                        "a3", 12, 1235,
+                        1, 1, 1,
+                        "high", 123, "now", 123,
+                        "aco", 132);
+
+        ShiftManager a = new ShiftManager();
+
+        a.addShiftManagedOfficer(smo);
+        a.addShiftManagedOfficer(smo1);
+        a.addShiftManagedOfficer(smo2);
+        a.addShiftManagedOfficer(smo3);
+        a.addShiftManagedOfficer(smo4);
+
+
+        System.out.println(a.hasShiftConflict());
+
     }
 }
