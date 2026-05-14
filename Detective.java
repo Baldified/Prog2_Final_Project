@@ -7,4 +7,9 @@ public class Detective extends SwornOfficer {
         }
     public Detective() { super(); }
     public Detective(SwornOfficer other) { super(other); }
+
+    @Override
+    public double calculateMonthlyCompensation() {
+        return (this.baseSalary * 8 * 30) + (this.overtimeHours * this.baseSalary * 2);
+    }
 }
