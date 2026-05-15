@@ -18,7 +18,7 @@ public class PoliceDepartmentManager {
         else throw new DuplicateEmployeeException();
     }
 
-    public void assignSupervisor(String divisionName, PoliceEmployee supervisor) {
+    public void assignSupervisor(String divisionName, PoliceEmployee supervisor) throws DivisionNotFoundException, InvalidSupervisorAssignmentException {
         if(!getDivisions().containsKey(divisionName)) throw new DivisionNotFoundException();
         Division d = divisions.get(divisionName);
         d.setSupervisor(supervisor);

@@ -146,6 +146,8 @@ public class Main {
         CoverageAnalyzer c = new CoverageAnalyzer(a);
         EmergencyShiftPlanner d = new EmergencyShiftPlanner();
         ps.saveManager(a);
+        PoliceDepartmentManager pdm = new PoliceDepartmentManager();
+
         
         System.out.println(b.hasShiftConflict());
         System.out.println(c.hasShortage());
