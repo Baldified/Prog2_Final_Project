@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
          Division de = new Division();
          de.setDivisionName("Ghost");
-         PromotionBoard pmb = new PromotionBoard();
+        
          PatrolOfficer patrolOfficer = new PatrolOfficer(
         "P001",
         "Bob",
@@ -90,9 +90,6 @@ public class Main {
         de.addEmployee(patrolOfficer);
         de.setSupervisor(swornOfficer);
         System.out.print(de);
-    
-        pmb.approveSupervisorPromotion()
-
 
         //TEST delete if needed
 

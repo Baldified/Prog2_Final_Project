@@ -108,6 +108,7 @@ public class PoliceTextIO {
                 }
                 if (input.hasNextLine()) input.nextLine();
         }
+        input.close();
         return pdm;
     }
 }
