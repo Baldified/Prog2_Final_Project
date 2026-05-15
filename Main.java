@@ -134,7 +134,7 @@ public class Main {
         //                 1, 1, 1,
         //                 "high", 123, "now", 123,
         //                 null, 231231);
-
+        PoliceSerializer ps = new PoliceSerializer();
         List<ShiftManagedOfficer> a = new ArrayList<>();
         a.add(smo);
         a.add(smo1);
@@ -145,6 +145,7 @@ public class Main {
         ShiftManager b = new ShiftManager(a);
         CoverageAnalyzer c = new CoverageAnalyzer(a);
         EmergencyShiftPlanner d = new EmergencyShiftPlanner();
+        ps.saveManager(a);
         
         System.out.println(b.hasShiftConflict());
         System.out.println(c.hasShortage());
