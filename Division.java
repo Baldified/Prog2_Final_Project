@@ -50,4 +50,11 @@ public class Division {
     public List<PoliceEmployee> getEmployees() {
         return employees;
     }
+
+    @Override
+    public String toString() {
+        return "Division [divisionName=" + divisionName + ", employees=" + employees + ", supervisor=" + supervisor
+                + ", getDivisionName()=" + getDivisionName() + "]";
+    }
+    
 }
