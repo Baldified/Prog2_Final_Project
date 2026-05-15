@@ -43,7 +43,8 @@ public class Division {
         employees.add(e);
     }
 
-    public void setSupervisor(PoliceEmployee supervisor) {
+    public void setSupervisor(PoliceEmployee supervisor) throws InvalidSupervisorAssignmentException {
+        if(!employees.contains(supervisor)) throw new InvalidSupervisorAssignmentException();
         this.supervisor = supervisor;
     }
 

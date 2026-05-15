@@ -19,6 +19,7 @@ public class PoliceDepartmentManager {
     }
 
     public void assignSupervisor(String divisionName, PoliceEmployee supervisor) {
+        if(!getDivisions().containsKey(divisionName)) throw new DivisionNotFoundException();
         Division d = divisions.get(divisionName);
         d.setSupervisor(supervisor);
     }
