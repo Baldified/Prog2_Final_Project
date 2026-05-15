@@ -14,7 +14,8 @@ public class PoliceDepartmentManager {
         divisions.put(name, new Division());
     }
     public void addEmployee(PoliceEmployee e) {
-        employees.add(e);
+        if(!employees.contains(e)) employees.add(e);
+        else throw new DuplicateEmployeeException();
     }
 
     public void assignSupervisor(String divisionName, PoliceEmployee supervisor) {
